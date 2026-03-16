@@ -1,0 +1,274 @@
+<div class="wedding-page">
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="mandala-wrap" aria-hidden="true">
+      <div class="mandala-ring"></div>
+      <div class="mandala-ring"></div>
+      <div class="mandala-ring"></div>
+      <div class="mandala-ring"></div>
+    </div>
+    <svg class="mandala-lines" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
+      <g transform="translate(400,400)">
+        <line x1="0" y1="-370" x2="0" y2="370" stroke="#c8913a" stroke-width="0.4"/>
+        <line x1="-370" y1="0" x2="370" y2="0" stroke="#c8913a" stroke-width="0.4"/>
+        <line x1="-262" y1="-262" x2="262" y2="262" stroke="#c8913a" stroke-width="0.3"/>
+        <line x1="262" y1="-262" x2="-262" y2="262" stroke="#c8913a" stroke-width="0.3"/>
+        <line x1="-140" y1="-345" x2="140" y2="345" stroke="#c8913a" stroke-width="0.2"/>
+        <line x1="140" y1="-345" x2="-140" y2="345" stroke="#c8913a" stroke-width="0.2"/>
+        <line x1="-345" y1="-140" x2="345" y2="140" stroke="#c8913a" stroke-width="0.2"/>
+        <line x1="345" y1="-140" x2="-345" y2="140" stroke="#c8913a" stroke-width="0.2"/>
+      </g>
+    </svg>
+    <div class="petal p1"></div><div class="petal p2"></div>
+    <div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div>
+
+    <!-- Ganesh SVG -->
+    <div class="ganesh-wrap">
+      <svg width="100" height="110" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="48" r="44" fill="none" stroke="#c8913a" stroke-width="0.6" opacity="0.35"/>
+        <circle cx="50" cy="48" r="38" fill="none" stroke="#e8b95c" stroke-width="0.4" opacity="0.2"/>
+        <ellipse cx="50" cy="72" rx="22" ry="26" fill="#c8913a" opacity="0.85"/>
+        <ellipse cx="50" cy="88" rx="24" ry="10" fill="#e8b95c" opacity="0.6"/>
+        <circle cx="50" cy="44" r="20" fill="#c8913a" opacity="0.9"/>
+        <ellipse cx="28" cy="45" rx="8" ry="12" fill="#e8b95c" opacity="0.7"/>
+        <ellipse cx="72" cy="45" rx="8" ry="12" fill="#e8b95c" opacity="0.7"/>
+        <ellipse cx="28" cy="45" rx="5" ry="8" fill="#c8913a" opacity="0.5"/>
+        <ellipse cx="72" cy="45" rx="5" ry="8" fill="#c8913a" opacity="0.5"/>
+        <path d="M 50 56 Q 42 66 46 76 Q 50 82 45 84" stroke="#8b5a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <circle cx="43" cy="42" r="2.8" fill="#3a1c0c"/>
+        <circle cx="57" cy="42" r="2.8" fill="#3a1c0c"/>
+        <circle cx="44" cy="41" r="1" fill="white" opacity="0.7"/>
+        <circle cx="58" cy="41" r="1" fill="white" opacity="0.7"/>
+        <circle cx="50" cy="36" r="2" fill="#8b1a1a" opacity="0.8"/>
+        <polygon points="40,26 50,10 60,26" fill="#e8b95c" opacity="0.8"/>
+        <polygon points="44,26 50,16 56,26" fill="#c8913a"/>
+        <circle cx="50" cy="12" r="3" fill="#f6e2a8" opacity="0.9"/>
+        <line x1="50" y1="62" x2="26" y2="52" stroke="#c8913a" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+        <line x1="50" y1="62" x2="74" y2="52" stroke="#c8913a" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+        <circle cx="74" cy="50" r="4.5" fill="#e8b95c" opacity="0.75"/>
+        <circle cx="26" cy="50" r="4.5" fill="#e8b95c" opacity="0.75"/>
+        <ellipse cx="21" cy="48" rx="4" ry="5" fill="#f6e2a8" opacity="0.7"/>
+        <path d="M 18 47 Q 21 40 24 47" fill="#c8913a" opacity="0.6"/>
+      </svg>
+    </div>
+
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      Shubha Vivaha
+      <span class="eyebrow-line"></span>
+    </div>
+
+    <div class="hero-names">
+      <span class="hero-name-groom">{{ groom.displayName }}</span>
+      <div class="hero-weds">
+        <span class="weds-line"></span>
+        weds
+        <span class="weds-line"></span>
+      </div>
+      <span class="hero-name-bride">{{ bride.displayName }}</span>
+      <span class="hero-name-bride-full">{{ bride.shortName }}</span>
+    </div>
+
+    <div class="hero-date-badge">
+      <span class="date-seg">SUNDAY</span>
+      <span class="date-seg-sep"></span>
+      <span class="date-seg">MAY 3</span>
+      <span class="date-seg-sep"></span>
+      <span class="date-seg">2026</span>
+    </div>
+
+    <p class="hero-note">{{ venue.name }}, Srikakulam</p>
+
+    <button class="scroll-cta" (click)="scrollTo('muhurtam')">
+      View Details ↓
+    </button>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="ornament-row">
+    <div class="orn-line"></div>
+    <div class="orn-gems"><span>✦</span><span>✦</span><span>✦</span></div>
+    <div class="orn-line"></div>
+  </div>
+
+  <!-- ══ MUHURTAM ══ -->
+  <section class="muhurtam-section" id="muhurtam">
+    <div class="sec-label">Auspicious Timing</div>
+    <div class="muhurtam-center">
+      <div class="muhurtam-card">
+        <span class="muhurtam-label">Sumuhurtam</span>
+        <span class="muhurtam-time">
+          {{ muhurtam.time }}
+        </span>
+        <div class="muhurtam-date">{{ muhurtam.date }}</div>
+        <div class="muhurtam-nakshatra">{{ muhurtam.lagnam }}</div>
+        <div class="muhurtam-note">
+          <strong>Note:</strong> {{ muhurtam.note }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="ornament-row">
+    <div class="orn-line"></div>
+    <div class="orn-gems"><span>✦</span><span>✦</span><span>✦</span></div>
+    <div class="orn-line"></div>
+  </div>
+
+  <!-- ══ COUPLE & FAMILY ══ -->
+  <section class="couple-section">
+    <div class="sec-label">The Families</div>
+
+    <div class="couple-grid">
+      <!-- Groom -->
+      <div class="person-block">
+        <div class="person-monogram groom-mono">K</div>
+        <div class="person-title">Groom</div>
+        <div class="person-full-name">{{ groom.shortName }}</div>
+        <div class="person-parents-label">Parents</div>
+        <p class="person-parents">
+          <strong>{{ groom.father }}</strong><br>
+          &amp; {{ groom.mother }}
+        </p>
+        <div class="grandparents-label">Grandparents</div>
+        <p class="person-grandparents">
+          <strong>{{ groom.grandfather }}</strong><br>
+          of {{ groom.village }}
+        </p>
+      </div>
+
+      <!-- Connector -->
+      <div class="and-col">
+        <svg viewBox="0 0 60 100" class="and-svg">
+          <line x1="30" y1="0" x2="30" y2="36" stroke="#c8913a" stroke-width=".8" opacity=".45"/>
+          <circle cx="30" cy="50" r="12" fill="none" stroke="#c8913a" stroke-width=".8" opacity=".45"/>
+          <text x="30" y="55" text-anchor="middle" font-size="14" fill="#c8913a" opacity=".8"
+            font-family="Cormorant Garamond,serif" font-style="italic">&amp;</text>
+          <line x1="30" y1="62" x2="30" y2="100" stroke="#c8913a" stroke-width=".8" opacity=".45"/>
+        </svg>
+      </div>
+
+      <!-- Bride -->
+      <div class="person-block">
+        <div class="person-monogram bride-mono">K</div>
+        <div class="person-title">Bride</div>
+        <div class="person-full-name">{{ bride.shortName }}</div>
+        <div class="person-parents-label">Parents</div>
+        <p class="person-parents">
+          <strong>Smt. &amp; {{ bride.father }}</strong><br>
+          &amp; {{ bride.mother }}
+        </p>
+        <div class="grandparents-label">Grandparents</div>
+        <p class="person-grandparents">
+          <strong>{{ bride.grandfather }}</strong><br>
+          &amp; {{ bride.grandmother }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DARK DIVIDER -->
+  <div class="ornament-row dark">
+    <div class="orn-line dark-line"></div>
+    <div class="orn-gems" style="opacity:.4"><span>✦</span><span>✦</span><span>✦</span></div>
+    <div class="orn-line dark-line"></div>
+  </div>
+
+  <!-- ══ EVENTS ══ -->
+  <section class="events-section">
+    <div class="sec-label light">Celebrations</div>
+    <p class="events-sub">Join us for these sacred occasions</p>
+    <div class="events-list">
+      <div class="event-card" [ngClass]="event.colorClass"
+           *ngFor="let event of events">
+        <div class="ev-date">
+          <div class="ev-day">{{ event.day }}</div>
+          <div class="ev-month">{{ event.month }}</div>
+        </div>
+        <div class="ev-vline"></div>
+        <div class="ev-body">
+          <div class="ev-name">{{ event.name }}</div>
+          <div class="ev-time">{{ event.time }}</div>
+          <div class="ev-venue">{{ event.venue }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="ornament-row light-cream">
+    <div class="orn-line"></div>
+    <div class="orn-gems"><span>✦</span><span>✦</span><span>✦</span></div>
+    <div class="orn-line"></div>
+  </div>
+
+  <!-- ══ VENUE ══ -->
+  <section class="venue-section">
+    <div class="sec-label">Venue</div>
+    <h3 class="venue-name">{{ venue.name }}</h3>
+    <p class="venue-address">{{ venue.address }}</p>
+    <a [href]="venue.mapsLink" target="_blank" rel="noopener" class="venue-map-link">
+      Get Directions →
+    </a>
+    <div class="map-container">
+      <iframe [src]="mapsEmbedUrl" width="100%" height="280"
+        style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Wedding Venue Map">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ══ RSVP ══ -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="rsvp-inner">
+      <div class="rsvp-ganesh">
+        <svg width="54" height="60" viewBox="0 0 100 110">
+          <ellipse cx="50" cy="72" rx="22" ry="26" fill="#c8913a" opacity="0.55"/>
+          <circle cx="50" cy="44" r="20" fill="#c8913a" opacity="0.6"/>
+          <ellipse cx="28" cy="45" rx="8" ry="12" fill="#e8b95c" opacity="0.45"/>
+          <ellipse cx="72" cy="45" rx="8" ry="12" fill="#e8b95c" opacity="0.45"/>
+          <path d="M 50 56 Q 42 66 46 76 Q 50 82 45 84" stroke="#8b5a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <circle cx="43" cy="42" r="2.8" fill="#3a1c0c"/>
+          <circle cx="57" cy="42" r="2.8" fill="#3a1c0c"/>
+          <polygon points="40,26 50,10 60,26" fill="#e8b95c" opacity="0.65"/>
+          <circle cx="50" cy="12" r="3" fill="#f6e2a8" opacity="0.9"/>
+        </svg>
+      </div>
+      <div class="sec-label" style="color:var(--gold-light)">Kindly Respond</div>
+      <h2 class="rsvp-title">You Are Invited</h2>
+      <p class="rsvp-body">
+        Your presence and blessings would make our celebration complete.<br>
+        We joyfully invite you to witness this sacred union.
+      </p>
+      <div class="rsvp-actions">
+        <a href="tel:+919999999999" class="rsvp-btn rsvp-primary">Confirm Attendance</a>
+        <a href="mailto:invitation@example.com" class="rsvp-btn rsvp-secondary">Send a Blessing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-mandala" aria-hidden="true">
+      <svg viewBox="0 0 300 300" style="width:100%;height:100%">
+        <g transform="translate(150,150)">
+          <circle r="130" fill="none" stroke="#c8913a" stroke-width="0.5" opacity="0.6"/>
+          <circle r="100" fill="none" stroke="#e8b95c" stroke-width="0.4" opacity="0.4"/>
+          <circle r="65" fill="none" stroke="#c8913a" stroke-width="0.5" opacity="0.5"/>
+          <circle r="30" fill="none" stroke="#e8b95c" stroke-width="0.6" opacity="0.5"/>
+          <line x1="0" y1="-130" x2="0" y2="130" stroke="#c8913a" stroke-width="0.3" opacity="0.3"/>
+          <line x1="-130" y1="0" x2="130" y2="0" stroke="#c8913a" stroke-width="0.3" opacity="0.3"/>
+          <line x1="-92" y1="-92" x2="92" y2="92" stroke="#c8913a" stroke-width="0.2" opacity="0.2"/>
+          <line x1="92" y1="-92" x2="-92" y2="92" stroke="#c8913a" stroke-width="0.2" opacity="0.2"/>
+        </g>
+      </svg>
+    </div>
+    <div class="footer-names">{{ groom.displayName }} &amp; {{ bride.displayName }}</div>
+    <div class="footer-date">03 · 05 · 2026 · Srikakulam</div>
+    <p class="footer-blessing">May this union be blessed with love, prosperity and joy forever</p>
+  </footer>
+
+</div>
